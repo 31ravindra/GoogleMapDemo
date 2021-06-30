@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Vehicle Detail View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="VehicleDetailViewController" id="BYZ-38-t0r" customClass="VehicleDetailViewController" customModule="RideCellMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IvR-8B-lJT">
+                                <rect key="frame" x="0.0" y="696" width="414" height="200"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfF-DZ-b6g">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dPc-TB-V5R">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-j6-vBm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="200" id="ebj-kI-lgP"/>
+                                                            <constraint firstAttribute="width" constant="414" id="i6w-IO-lfT"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="t6V-j6-vBm" secondAttribute="bottom" id="Ld1-t5-8IJ"/>
+                                                    <constraint firstItem="t6V-j6-vBm" firstAttribute="leading" secondItem="dPc-TB-V5R" secondAttribute="leading" id="NrV-xg-4MO"/>
+                                                    <constraint firstAttribute="trailing" secondItem="t6V-j6-vBm" secondAttribute="trailing" id="cAD-uG-DYW"/>
+                                                    <constraint firstItem="t6V-j6-vBm" firstAttribute="top" secondItem="dPc-TB-V5R" secondAttribute="top" id="xzP-ar-qpH"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="dPc-TB-V5R" firstAttribute="bottom" secondItem="Xqd-d8-ODn" secondAttribute="bottom" id="5lh-TH-Kzx"/>
+                                            <constraint firstItem="dPc-TB-V5R" firstAttribute="trailing" secondItem="Xqd-d8-ODn" secondAttribute="trailing" id="8BA-Q6-IBD"/>
+                                            <constraint firstItem="dPc-TB-V5R" firstAttribute="height" secondItem="Qc8-D2-SMa" secondAttribute="height" id="fEs-5c-E7c"/>
+                                            <constraint firstItem="dPc-TB-V5R" firstAttribute="leading" secondItem="Xqd-d8-ODn" secondAttribute="leading" id="tIb-Kg-Qe3"/>
+                                            <constraint firstItem="dPc-TB-V5R" firstAttribute="top" secondItem="Xqd-d8-ODn" secondAttribute="top" id="xlK-bQ-Z0g"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="Xqd-d8-ODn"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="Qc8-D2-SMa"/>
+                                    </scrollView>
+                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HPl-dd-drA">
+                                        <rect key="frame" x="145.5" y="5" width="123" height="28"/>
+                                        <color key="pageIndicatorTintColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="currentPageIndicatorTintColor" red="0.1647058824" green="0.78823529410000004" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </pageControl>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstItem="HPl-dd-drA" firstAttribute="top" secondItem="IvR-8B-lJT" secondAttribute="top" constant="5" id="4fe-gO-oXR"/>
+                                    <constraint firstAttribute="bottom" secondItem="PfF-DZ-b6g" secondAttribute="bottom" id="9nE-e0-7DY"/>
+                                    <constraint firstItem="PfF-DZ-b6g" firstAttribute="leading" secondItem="IvR-8B-lJT" secondAttribute="leading" id="JKe-N6-nbc"/>
+                                    <constraint firstItem="HPl-dd-drA" firstAttribute="centerX" secondItem="IvR-8B-lJT" secondAttribute="centerX" id="KjF-5F-bUF"/>
+                                    <constraint firstAttribute="trailing" secondItem="PfF-DZ-b6g" secondAttribute="trailing" id="bD7-s9-c38"/>
+                                    <constraint firstAttribute="height" constant="200" id="gf2-lh-lbu"/>
+                                    <constraint firstItem="PfF-DZ-b6g" firstAttribute="top" secondItem="IvR-8B-lJT" secondAttribute="top" id="p1Z-qW-4Bw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CR4-fC-jHj" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="696"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IvR-8B-lJT" secondAttribute="trailing" id="9cw-LE-FsO"/>
+                            <constraint firstAttribute="bottom" secondItem="IvR-8B-lJT" secondAttribute="bottom" id="LPv-Un-B0e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CR4-fC-jHj" secondAttribute="trailing" id="PMe-aQ-23C"/>
+                            <constraint firstItem="CR4-fC-jHj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Wuv-DY-T4J"/>
+                            <constraint firstItem="IvR-8B-lJT" firstAttribute="top" secondItem="CR4-fC-jHj" secondAttribute="bottom" id="eiS-5H-DxL"/>
+                            <constraint firstItem="CR4-fC-jHj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fZa-o3-0d6"/>
+                            <constraint firstItem="IvR-8B-lJT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kdZ-CZ-0kh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="dPc-TB-V5R" id="Q6s-t3-3VU"/>
+                        <outlet property="mapView" destination="CR4-fC-jHj" id="Tas-wD-Ffn"/>
+                        <outlet property="pageControl" destination="HPl-dd-drA" id="zxf-Hf-kM3"/>
+                        <outlet property="scrollView" destination="PfF-DZ-b6g" id="Ere-ng-bl5"/>
+                        <outlet property="viewContentInside" destination="t6V-j6-vBm" id="Km9-9j-a9d"/>
+                        <outlet property="widthInsideView" destination="i6w-IO-lfT" id="RlJ-xc-clN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

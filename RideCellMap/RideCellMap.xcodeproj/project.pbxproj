@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37D151641EF941BD0B791033 /* Pods_RideCellMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4378CBA29BE00F15B3BD5A97 /* Pods_RideCellMap.framework */; };
+		8DD4F844B22450B3B0870E89 /* Pods_RideCellMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53D7D8542820483F00B863D /* Pods_RideCellMapTests.framework */; };
+		AA2F69CF3D9CFC9F5E052078 /* Pods_RideCellMap_RideCellMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A99079FC499784D0912F36 /* Pods_RideCellMap_RideCellMapUITests.framework */; };
+		E0312320268AC042001A201E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031231F268AC042001A201E /* AppDelegate.swift */; };
+		E0312322268AC042001A201E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0312321268AC042001A201E /* SceneDelegate.swift */; };
+		E0312327268AC042001A201E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0312325268AC042001A201E /* Main.storyboard */; };
+		E031232A268AC042001A201E /* RideCellMap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0312328268AC042001A201E /* RideCellMap.xcdatamodeld */; };
+		E031232C268AC043001A201E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E031232B268AC043001A201E /* Assets.xcassets */; };
+		E031232F268AC043001A201E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E031232D268AC043001A201E /* LaunchScreen.storyboard */; };
+		E031233A268AC043001A201E /* RideCellMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0312339268AC043001A201E /* RideCellMapTests.swift */; };
+		E0312345268AC043001A201E /* RideCellMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0312344268AC043001A201E /* RideCellMapUITests.swift */; };
+		E0312363268AC2F3001A201E /* vehicles_data.json in Resources */ = {isa = PBXBuildFile; fileRef = E0312362268AC2F3001A201E /* vehicles_data.json */; };
+		E0312368268AC311001A201E /* SlideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0312367268AC311001A201E /* SlideView.xib */; };
+		E031236D268AC463001A201E /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031236C268AC463001A201E /* SlideView.swift */; };
+		E0312372268AD024001A201E /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0312371268AD024001A201E /* Vehicle.swift */; };
+		E0312378268AD8B6001A201E /* DataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0312377268AD8B6001A201E /* DataViewModel.swift */; };
+		E031237D268AE36E001A201E /* VehicleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E031237C268AE36E001A201E /* VehicleDetailViewController.swift */; };
+		E0312383268B13AF001A201E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0312382268B13AF001A201E /* Extensions.swift */; };
+		E031238B268B2634001A201E /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = E031238A268B2634001A201E /* style.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E0312336268AC043001A201E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0312314268AC042001A201E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E031231B268AC042001A201E;
+			remoteInfo = RideCellMap;
+		};
+		E0312341268AC043001A201E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E0312314268AC042001A201E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E031231B268AC042001A201E;
+			remoteInfo = RideCellMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		31EEB9A882B3EBBF03EA3C48 /* Pods-RideCellMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideCellMapTests.release.xcconfig"; path = "Target Support Files/Pods-RideCellMapTests/Pods-RideCellMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		34A1C96A038F2C59E7A722F7 /* Pods-RideCellMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideCellMapTests.debug.xcconfig"; path = "Target Support Files/Pods-RideCellMapTests/Pods-RideCellMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4378CBA29BE00F15B3BD5A97 /* Pods_RideCellMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideCellMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C371F83A6E4FC10AA7FCAAF /* Pods-RideCellMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideCellMap.release.xcconfig"; path = "Target Support Files/Pods-RideCellMap/Pods-RideCellMap.release.xcconfig"; sourceTree = "<group>"; };
+		81A5A61D36D71B783D826AD0 /* Pods-RideCellMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideCellMap.debug.xcconfig"; path = "Target Support Files/Pods-RideCellMap/Pods-RideCellMap.debug.xcconfig"; sourceTree = "<group>"; };
+		94A99079FC499784D0912F36 /* Pods_RideCellMap_RideCellMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideCellMap_RideCellMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E10E970E26519896569103 /* Pods-RideCellMap-RideCellMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideCellMap-RideCellMapUITests.release.xcconfig"; path = "Target Support Files/Pods-RideCellMap-RideCellMapUITests/Pods-RideCellMap-RideCellMapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B53D7D8542820483F00B863D /* Pods_RideCellMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RideCellMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB22C683CD024F15A7E09554 /* Pods-RideCellMap-RideCellMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RideCellMap-RideCellMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-RideCellMap-RideCellMapUITests/Pods-RideCellMap-RideCellMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E031231C268AC042001A201E /* RideCellMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RideCellMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E031231F268AC042001A201E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E0312321268AC042001A201E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E0312326268AC042001A201E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E0312329268AC042001A201E /* RideCellMap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RideCellMap.xcdatamodel; sourceTree = "<group>"; };
+		E031232B268AC043001A201E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E031232E268AC043001A201E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E0312330268AC043001A201E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0312335268AC043001A201E /* RideCellMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideCellMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0312339268AC043001A201E /* RideCellMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCellMapTests.swift; sourceTree = "<group>"; };
+		E031233B268AC043001A201E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0312340268AC043001A201E /* RideCellMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RideCellMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0312344268AC043001A201E /* RideCellMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideCellMapUITests.swift; sourceTree = "<group>"; };
+		E0312346268AC043001A201E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0312362268AC2F3001A201E /* vehicles_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vehicles_data.json; sourceTree = "<group>"; };
+		E0312367268AC311001A201E /* SlideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlideView.xib; sourceTree = "<group>"; };
+		E031236C268AC463001A201E /* SlideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		E0312371268AD024001A201E /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		E0312377268AD8B6001A201E /* DataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewModel.swift; sourceTree = "<group>"; };
+		E031237C268AE36E001A201E /* VehicleDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleDetailViewController.swift; sourceTree = "<group>"; };
+		E0312382268B13AF001A201E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E031238A268B2634001A201E /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E0312319268AC042001A201E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37D151641EF941BD0B791033 /* Pods_RideCellMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0312332268AC043001A201E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DD4F844B22450B3B0870E89 /* Pods_RideCellMapTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E031233D268AC043001A201E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA2F69CF3D9CFC9F5E052078 /* Pods_RideCellMap_RideCellMapUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2FBBFCB7A989643EB6E8E4F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4378CBA29BE00F15B3BD5A97 /* Pods_RideCellMap.framework */,
+				94A99079FC499784D0912F36 /* Pods_RideCellMap_RideCellMapUITests.framework */,
+				B53D7D8542820483F00B863D /* Pods_RideCellMapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0312313268AC042001A201E = {
+			isa = PBXGroup;
+			children = (
+				E031231E268AC042001A201E /* RideCellMap */,
+				E0312338268AC043001A201E /* RideCellMapTests */,
+				E0312343268AC043001A201E /* RideCellMapUITests */,
+				E031231D268AC042001A201E /* Products */,
+				E03D7E839F17131666B062F7 /* Pods */,
+				2FBBFCB7A989643EB6E8E4F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E031231D268AC042001A201E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E031231C268AC042001A201E /* RideCellMap.app */,
+				E0312335268AC043001A201E /* RideCellMapTests.xctest */,
+				E0312340268AC043001A201E /* RideCellMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E031231E268AC042001A201E /* RideCellMap */ = {
+			isa = PBXGroup;
+			children = (
+				E0312381268B1392001A201E /* Extensions */,
+				E0312376268AD88C001A201E /* View Model */,
+				E0312361268AC2C7001A201E /* JsonFile */,
+				E0312360268AC2BB001A201E /* Models */,
+				E031235F268AC2A3001A201E /* XibViews */,
+				E031235E268AC28D001A201E /* Storyboards */,
+				E031235D268AC27D001A201E /* CommonFiles */,
+				E031235C268AC264001A201E /* ViewControllers */,
+				E031232B268AC043001A201E /* Assets.xcassets */,
+				E031232D268AC043001A201E /* LaunchScreen.storyboard */,
+				E0312330268AC043001A201E /* Info.plist */,
+				E0312328268AC042001A201E /* RideCellMap.xcdatamodeld */,
+			);
+			path = RideCellMap;
+			sourceTree = "<group>";
+		};
+		E0312338268AC043001A201E /* RideCellMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				E0312339268AC043001A201E /* RideCellMapTests.swift */,
+				E031233B268AC043001A201E /* Info.plist */,
+			);
+			path = RideCellMapTests;
+			sourceTree = "<group>";
+		};
+		E0312343268AC043001A201E /* RideCellMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E0312344268AC043001A201E /* RideCellMapUITests.swift */,
+				E0312346268AC043001A201E /* Info.plist */,
+			);
+			path = RideCellMapUITests;
+			sourceTree = "<group>";
+		};
+		E031235C268AC264001A201E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E031237C268AE36E001A201E /* VehicleDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E031235D268AC27D001A201E /* CommonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E031231F268AC042001A201E /* AppDelegate.swift */,
+				E0312321268AC042001A201E /* SceneDelegate.swift */,
+			);
+			path = CommonFiles;
+			sourceTree = "<group>";
+		};
+		E031235E268AC28D001A201E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E0312325268AC042001A201E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E031235F268AC2A3001A201E /* XibViews */ = {
+			isa = PBXGroup;
+			children = (
+				E0312367268AC311001A201E /* SlideView.xib */,
+				E031236C268AC463001A201E /* SlideView.swift */,
+			);
+			path = XibViews;
+			sourceTree = "<group>";
+		};
+		E0312360268AC2BB001A201E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0312371268AD024001A201E /* Vehicle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E0312361268AC2C7001A201E /* JsonFile */ = {
+			isa = PBXGroup;
+			children = (
+				E031238A268B2634001A201E /* style.json */,
+				E0312362268AC2F3001A201E /* vehicles_data.json */,
+			);
+			path = JsonFile;
+			sourceTree = "<group>";
+		};
+		E0312376268AD88C001A201E /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0312377268AD8B6001A201E /* DataViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		E0312381268B1392001A201E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E0312382268B13AF001A201E /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E03D7E839F17131666B062F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81A5A61D36D71B783D826AD0 /* Pods-RideCellMap.debug.xcconfig */,
+				6C371F83A6E4FC10AA7FCAAF /* Pods-RideCellMap.release.xcconfig */,
+				CB22C683CD024F15A7E09554 /* Pods-RideCellMap-RideCellMapUITests.debug.xcconfig */,
+				A7E10E970E26519896569103 /* Pods-RideCellMap-RideCellMapUITests.release.xcconfig */,
+				34A1C96A038F2C59E7A722F7 /* Pods-RideCellMapTests.debug.xcconfig */,
+				31EEB9A882B3EBBF03EA3C48 /* Pods-RideCellMapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E031231B268AC042001A201E /* RideCellMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0312349268AC043001A201E /* Build configuration list for PBXNativeTarget "RideCellMap" */;
+			buildPhases = (
+				6C5AB0F8ECCECF9A03FC29A6 /* [CP] Check Pods Manifest.lock */,
+				E0312318268AC042001A201E /* Sources */,
+				E0312319268AC042001A201E /* Frameworks */,
+				E031231A268AC042001A201E /* Resources */,
+				99B7E32E70FA0D0A449BC802 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RideCellMap;
+			productName = RideCellMap;
+			productReference = E031231C268AC042001A201E /* RideCellMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E0312334268AC043001A201E /* RideCellMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E031234C268AC043001A201E /* Build configuration list for PBXNativeTarget "RideCellMapTests" */;
+			buildPhases = (
+				FF7DA3033720B5FD41906DE7 /* [CP] Check Pods Manifest.lock */,
+				E0312331268AC043001A201E /* Sources */,
+				E0312332268AC043001A201E /* Frameworks */,
+				E0312333268AC043001A201E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0312337268AC043001A201E /* PBXTargetDependency */,
+			);
+			name = RideCellMapTests;
+			productName = RideCellMapTests;
+			productReference = E0312335268AC043001A201E /* RideCellMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E031233F268AC043001A201E /* RideCellMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E031234F268AC043001A201E /* Build configuration list for PBXNativeTarget "RideCellMapUITests" */;
+			buildPhases = (
+				F80C6B4EE0EB27F5C474B9CE /* [CP] Check Pods Manifest.lock */,
+				E031233C268AC043001A201E /* Sources */,
+				E031233D268AC043001A201E /* Frameworks */,
+				E031233E268AC043001A201E /* Resources */,
+				8F2DA9ADBF99A32F91B1909C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0312342268AC043001A201E /* PBXTargetDependency */,
+			);
+			name = RideCellMapUITests;
+			productName = RideCellMapUITests;
+			productReference = E0312340268AC043001A201E /* RideCellMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E0312314268AC042001A201E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					E031231B268AC042001A201E = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					E0312334268AC043001A201E = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E031231B268AC042001A201E;
+					};
+					E031233F268AC043001A201E = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = E031231B268AC042001A201E;
+					};
+				};
+			};
+			buildConfigurationList = E0312317268AC042001A201E /* Build configuration list for PBXProject "RideCellMap" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E0312313268AC042001A201E;
+			productRefGroup = E031231D268AC042001A201E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E031231B268AC042001A201E /* RideCellMap */,
+				E0312334268AC043001A201E /* RideCellMapTests */,
+				E031233F268AC043001A201E /* RideCellMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E031231A268AC042001A201E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E031232F268AC043001A201E /* LaunchScreen.storyboard in Resources */,
+				E031232C268AC043001A201E /* Assets.xcassets in Resources */,
+				E0312363268AC2F3001A201E /* vehicles_data.json in Resources */,
+				E031238B268B2634001A201E /* style.json in Resources */,
+				E0312368268AC311001A201E /* SlideView.xib in Resources */,
+				E0312327268AC042001A201E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0312333268AC043001A201E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E031233E268AC043001A201E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C5AB0F8ECCECF9A03FC29A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideCellMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F2DA9ADBF99A32F91B1909C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideCellMap-RideCellMapUITests/Pods-RideCellMap-RideCellMapUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideCellMap-RideCellMapUITests/Pods-RideCellMap-RideCellMapUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RideCellMap-RideCellMapUITests/Pods-RideCellMap-RideCellMapUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99B7E32E70FA0D0A449BC802 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideCellMap/Pods-RideCellMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RideCellMap/Pods-RideCellMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RideCellMap/Pods-RideCellMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F80C6B4EE0EB27F5C474B9CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideCellMap-RideCellMapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF7DA3033720B5FD41906DE7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RideCellMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E0312318268AC042001A201E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0312372268AD024001A201E /* Vehicle.swift in Sources */,
+				E0312383268B13AF001A201E /* Extensions.swift in Sources */,
+				E031237D268AE36E001A201E /* VehicleDetailViewController.swift in Sources */,
+				E0312320268AC042001A201E /* AppDelegate.swift in Sources */,
+				E031232A268AC042001A201E /* RideCellMap.xcdatamodeld in Sources */,
+				E0312322268AC042001A201E /* SceneDelegate.swift in Sources */,
+				E0312378268AD8B6001A201E /* DataViewModel.swift in Sources */,
+				E031236D268AC463001A201E /* SlideView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0312331268AC043001A201E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E031233A268AC043001A201E /* RideCellMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E031233C268AC043001A201E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0312345268AC043001A201E /* RideCellMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0312337268AC043001A201E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E031231B268AC042001A201E /* RideCellMap */;
+			targetProxy = E0312336268AC043001A201E /* PBXContainerItemProxy */;
+		};
+		E0312342268AC043001A201E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E031231B268AC042001A201E /* RideCellMap */;
+			targetProxy = E0312341268AC043001A201E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E0312325268AC042001A201E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E0312326268AC042001A201E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E031232D268AC043001A201E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E031232E268AC043001A201E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E0312347268AC043001A201E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E0312348268AC043001A201E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E031234A268AC043001A201E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81A5A61D36D71B783D826AD0 /* Pods-RideCellMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = RideCellMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridecell.RideCellMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E031234B268AC043001A201E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C371F83A6E4FC10AA7FCAAF /* Pods-RideCellMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = RideCellMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridecell.RideCellMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E031234D268AC043001A201E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A1C96A038F2C59E7A722F7 /* Pods-RideCellMapTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = RideCellMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridecell.RideCellMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideCellMap.app/RideCellMap";
+			};
+			name = Debug;
+		};
+		E031234E268AC043001A201E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31EEB9A882B3EBBF03EA3C48 /* Pods-RideCellMapTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = RideCellMapTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridecell.RideCellMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RideCellMap.app/RideCellMap";
+			};
+			name = Release;
+		};
+		E0312350268AC043001A201E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB22C683CD024F15A7E09554 /* Pods-RideCellMap-RideCellMapUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = RideCellMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridecell.RideCellMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RideCellMap;
+			};
+			name = Debug;
+		};
+		E0312351268AC043001A201E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E10E970E26519896569103 /* Pods-RideCellMap-RideCellMapUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RBC3ZW7CHU;
+				INFOPLIST_FILE = RideCellMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ridecell.RideCellMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RideCellMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E0312317268AC042001A201E /* Build configuration list for PBXProject "RideCellMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0312347268AC043001A201E /* Debug */,
+				E0312348268AC043001A201E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0312349268AC043001A201E /* Build configuration list for PBXNativeTarget "RideCellMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E031234A268AC043001A201E /* Debug */,
+				E031234B268AC043001A201E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E031234C268AC043001A201E /* Build configuration list for PBXNativeTarget "RideCellMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E031234D268AC043001A201E /* Debug */,
+				E031234E268AC043001A201E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E031234F268AC043001A201E /* Build configuration list for PBXNativeTarget "RideCellMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0312350268AC043001A201E /* Debug */,
+				E0312351268AC043001A201E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E0312328268AC042001A201E /* RideCellMap.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E0312329268AC042001A201E /* RideCellMap.xcdatamodel */,
+			);
+			currentVersion = E0312329268AC042001A201E /* RideCellMap.xcdatamodel */;
+			path = RideCellMap.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E0312314268AC042001A201E /* Project object */;
+}
