@@ -56,7 +56,6 @@ class SlideView: UIView {
         lblVehicleType.text = v.vehicle_make
         lblPlate.text = v.license_plate_number
         self.btnResCar.layer.cornerRadius = 8
-        btnResCarClicked(v)
     }
     
 }
